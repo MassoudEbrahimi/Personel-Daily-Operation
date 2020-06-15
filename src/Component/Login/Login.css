@@ -29,11 +29,15 @@ body {
 .first-text-head {
     font-size: 100px;
     color: #0DB8DE;
+    font-weight: bold;
+    font-family: Garamond;
 }
 
 .second-text-head {
-    font-size: 65px;
-    color: #27EF9F;
+    font-size: 75px;
+    color: #ECF0F5;
+    font-weight: lighter;
+    font-family: Garamond;
 }
 
 .login-title {

@@ -9,3 +9,9 @@
 	url('../fonts/iransans/ttf/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: "Yekan";
+	font-style: normal;
+	font-size: normal;
+	src: url("../font/yekan/Yekan.ttf")
+}
