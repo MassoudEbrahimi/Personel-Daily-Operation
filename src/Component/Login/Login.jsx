@@ -2,12 +2,24 @@ import React, { Component, Fragment } from 'react';
 
 
 class Login extends Component {
-    state = {}
+    constructor(props) {
+        super(props)
+        this.state = {
+            userName: "",
+            passWord: ""
+        }
+    }
+
+
+
+    Login = () => {
+        
+    }
     render() {
         return (
             <Fragment>
                 <div class="container">
-                    <div className="login-header col-10">
+                    <div className="login-header col-12">
                         <strong className="first-text-head">B</strong>
                         <strong className="second-text-head">arsam</strong>
                         <strong className="first-text-head">R</strong>
@@ -24,14 +36,14 @@ class Login extends Component {
                            </div>
                             <div class="col-lg-12 login-form">
                                 <div class="col-lg-12 login-form">
-                                    <form>
+                                    <form onSubmit={this.Login}>
                                         <div class="form-group">
                                             <label class="form-control-label">نام کاربری</label>
-                                            <input type="text" class="form-control" />
+                                            <input type="text" class="form-control-sm col-12 no-outline" />
                                         </div>
                                         <div class="form-group">
-                                            <label class="form-control-label">رمز عبور</label>
-                                            <input type="password" class="form-control" i />
+                                            <label class="form-control-label">رمز عبور</label><br />
+                                            <input type="password" class=" form-control-sm no-outline col-12" />
                                         </div>
                                         <div class="col-lg-12 loginbttm">
                                             <div class="col-lg-6 login-btm login-text">
