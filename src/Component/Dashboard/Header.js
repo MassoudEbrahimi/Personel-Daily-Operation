@@ -65,25 +65,25 @@ class Headers extends Component {
         const {time,date} = this.state
         return (
             <Fragment>
-                <nav class="navbar navbar-expand-lg navbar-mainbg">
-                    <a class="navbar-brand navbar-logo" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars text-white"></i>
+                <nav className="navbar navbar-expand-lg navbar-mainbg">
+                    <a className="navbar-brand navbar-logo" href="#"></a>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i className="fas fa-bars text-white"></i>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style={{ direction: "rtl" }}>
-                        <ul class="navbar-nav ml-auto mr-4">
-                            <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
-                            <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0);"><i class="mdi mdi-plus-box-multiple m-1 p-1"></i>جدید</a>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{ direction: "rtl" }}>
+                        <ul className="navbar-nav ml-auto mr-4">
+                            <div className="hori-selector"><div className="left"></div><div className="right"></div></div>
+                            <li className="nav-item">
+                                <a className="nav-link" href="javascript:void(0);"><i className="mdi mdi-plus-box-multiple m-1 p-1"></i>جدید</a>
                             </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="javascript:void(0);"><i class="mdi mdi-content-paste m-1 p-1"></i>فعالیت</a>
+                            <li className="nav-item active">
+                                <a className="nav-link" href="javascript:void(0);"><i className="mdi mdi-content-paste m-1 p-1"></i>فعالیت</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0);"><i class="mdi mdi-database m-1 p-1"></i>Wbs</a>
+                            <li className="nav-item">
+                                <a className="nav-link" href="javascript:void(0);"><i className="mdi mdi-database m-1 p-1"></i>Wbs</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0);"><i class="mdi mdi-pipe-wrench m-1 p-1"></i>پروژه</a>
+                            <li className="nav-item">
+                                <a className="nav-link" href="javascript:void(0);"><i className="mdi mdi-pipe-wrench m-1 p-1"></i>پروژه</a>
                             </li>
                             {/* <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0);"><i class="fa fa-joomla"></i>پروژه</a>
@@ -96,8 +96,8 @@ class Headers extends Component {
                         <span className="userName mdi mdi-" style={{ margin: "auto" }}>{time.toLocaleTimeString()}<span className="mdi mdi-clock mr-2" /></span>
                         <span className="userName" style={{ margin: "auto" }}><span className="mdi mdi-account-circle ml-2" />مسعود ابراهیمی</span>
                         <ul className="navbar-nav ml-5">
-                            <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0);"><i class="mdi mdi-exit-to-app m-1 p-1"></i>خروج</a>
+                            <li className="nav-item">
+                                <a className="nav-link" href="javascript:void(0);"><i className="mdi mdi-exit-to-app m-1 p-1"></i>خروج</a>
                             </li>
                         </ul>
                     </div>

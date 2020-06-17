@@ -12,10 +12,10 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Switch>
-          {/* <Route path="/" component={Login} /> */}
-          <Route path="/" component={Dashboard} />
-        </Switch>
+        <Route path="/" component={Dashboard} />
+        {/* <Switch> */}
+        {/* <Route path="/" component={Login} /> */}
+        {/* </Switch> */}
       </BrowserRouter>
 
     );

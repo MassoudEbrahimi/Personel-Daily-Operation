@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Headers from './Header';
+import MasterContent from './MasterContent';
 
 
 class Dashboard extends Component {
@@ -8,6 +9,7 @@ class Dashboard extends Component {
         return (
             <div>
                 <Headers />
+                <MasterContent />
             </div>
         );
     }
