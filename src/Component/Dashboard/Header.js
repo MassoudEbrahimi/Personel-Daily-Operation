@@ -7,7 +7,7 @@ class Headers extends Component {
         super(props)
         this.state = {
             time: new Date(),
-            date: new Date().toLocaleDateString()
+            date: new Date().toLocaleDateString("fa-IR")
         }
     }
     componentDidMount() {
@@ -49,7 +49,7 @@ class Headers extends Component {
             setTimeout(function () { test(); });
         });
         $(window).on('resize', function () {
-            setTimeout(function () { test(); }, 500);
+            setTimeout(function () { test(); }, 1000);
         });
         $(".navbar-toggler").click(function () {
             setTimeout(function () { test(); });
@@ -62,7 +62,7 @@ class Headers extends Component {
         this.setState({ time: new Date() })
     }
     render() {
-        const {time,date} = this.state
+        const { time, date } = this.state
         return (
             <Fragment>
                 <nav className="navbar navbar-expand-lg navbar-mainbg">
@@ -92,9 +92,10 @@ class Headers extends Component {
                                 <a class="nav-link" href="javascript:void(0);"><i class="fa fa-plus"></i>جدید</a>
                             </li> */}
                         </ul>
-                        <span className="userName" style={{ margin: "auto" }}>{date}<span className="mdi mdi-calendar-month mr-2" /></span>
-                        <span className="userName mdi mdi-" style={{ margin: "auto" }}>{time.toLocaleTimeString()}<span className="mdi mdi-clock mr-2" /></span>
-                        <span className="userName" style={{ margin: "auto" }}><span className="mdi mdi-account-circle ml-2" />مسعود ابراهیمی</span>
+
+                        <span className="userName" style={{ margin: "auto" }}>{date}<span className="mdi mdi-calendar-month m-1 p-1" /></span>
+                        <span className="userName" style={{ margin: "auto" }}>{time.toLocaleTimeString()}<span className="mdi mdi-clock m-1 p-1 " /></span>
+                        <span className="userName" style={{ margin: "auto" }}><span className="mdi mdi-account-circle m-1 p-1" />مسعود ابراهیمی</span>
                         <ul className="navbar-nav ml-5">
                             <li className="nav-item">
                                 <a className="nav-link" href="javascript:void(0);"><i className="mdi mdi-exit-to-app m-1 p-1"></i>خروج</a>
