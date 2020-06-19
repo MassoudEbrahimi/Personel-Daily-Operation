@@ -1,0 +1,8 @@
+{
+    "---- Modal-Form ----": "--------------------Form-Creator--------------------------",
+    "api_CreateModal": "http://192.168.1.213:7174/api/createform",
+    "---- Create ----": "--------------------Create--------------------------",
+    "api_CreateNewJob": "http://192.168.1.213:7174/api/createform",
+    "api_UpdateNewJob": "http://192.168.1.213:7174/api/createform",
+    "api_DeleteNewJob": "http://192.168.1.213:7174/api/createform"
+}

@@ -1,0 +1,186 @@
+.grid-container {
+  padding: 10px;
+  overflow: auto;
+}
+
+.grid-row {
+  display: flex
+}
+
+.grid-cell {
+  flex: 1;
+  background: #fff;
+  border-top: 1px solid #efefef;
+  padding: 8px 15px;
+  font-size: 13px;
+  color: #040404;
+  text-align: center;
+  text-align: right;
+  min-width: 200px;
+}
+
+.grid-cell.thin {
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.grid-cell-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.a-grid .grid-actions {
+  cursor: pointer;
+}
+
+.a-grid .filter-area {
+  width: 200px;
+  overflow: hidden;
+}
+
+.filter-area select {
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px 5px;
+  position: relative;
+  top: -3px;
+  height: 30px;
+  width: 100%;
+  font-family: inherit;
+  color: #686868;
+  font-size: 12px;
+}
+
+.filter-area input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px 8px;
+  width: 100%;
+  font-family: inherit;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+.filter-area button {
+  outline: 0;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 5px;
+  line-height: 5px;
+  margin: 5px;
+  height: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.a-grid li {
+  list-style: none;
+}
+
+.a-grid th input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px 8px;
+  width: 100%;
+  font-family: inherit;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+.a-grid {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 2px;
+  font-family: inherit;
+  direction: ltr;
+}
+
+.a-grid .table-footer {
+  direction: rtl;
+  height: 56px;
+  padding-left: 24px;
+  padding-right: 14px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 12px !important;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.a-grid .table-footer .dataTables_length {
+  display: flex;
+}
+
+.a-grid .table-footer label {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.54);
+  display: flex;
+  /* works with row or column */
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.a-grid .table-footer * {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.a-grid .table-footer .select-wrapper {
+  display: flex;
+  /* works with row or column */
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.a-grid .table-footer .dataTables_info, .a-grid .table-footer .dataTables_length {
+  margin-right: 32px;
+}
+
+.a-grid .table-footer .material-pagination {
+  display: flex;
+  -webkit-display: flex;
+  margin: 0;
+}
+
+.a-grid .table-footer .material-pagination li:first-child {
+  margin-right: 24px;
+}
+
+.a-grid .table-footer .material-pagination li a {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.a-grid .table-footer .select-wrapper input.select-dropdown {
+  margin: 0;
+  border-bottom: none;
+  height: auto;
+  line-height: normal;
+  font-size: 12px;
+  width: 40px;
+  text-align: right;
+}
+
+.a-grid .table-footer select {
+  background-color: transparent;
+  width: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  height: auto;
+  margin-left: 20px;
+}
+
+.thin-row {
+  min-width: 10px;
+  max-width: 10px;
+  align-items: center;
+}
+
+.thin-action {
+  min-width: 30px;
+  max-width: 30px;
+}
