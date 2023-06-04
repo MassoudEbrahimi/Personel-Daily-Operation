@@ -4,22 +4,10 @@ import './App.css';
 import "./Component/Login/Login.css"
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Dashboard from './Component/Dashboard/Dashboard';
+import Pattern from "./pattern.jsx";
 
 
-
-class App extends Component {
-  state = {}
-  render() {
-    return (
-      <BrowserRouter>
-        <Route path="/" component={Dashboard} />
-        {/* <Switch> */}
-        {/* <Route path="/" component={Login} /> */}
-        {/* </Switch> */}
-      </BrowserRouter>
-
-    );
-  }
+const App = () => {
+    return <Pattern / >
 }
-
 export default App;
