@@ -1,4 +1,5 @@
-
+import useD3 from "./../hooks/useD3";
+import * as d3 from 'd3'
 const Square = ({width, height}) => {
 
     const divRef = useD3(div => {
@@ -51,3 +52,4 @@ const Square = ({width, height}) => {
 
     return <div ref={divRef}/>;
 };
+export default Square

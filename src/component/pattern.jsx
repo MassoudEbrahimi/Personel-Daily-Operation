@@ -1,4 +1,8 @@
 
+import {useEffect} from 'react';
+import * as d3 from 'd3';
+import useWindowsSize from "./../hooks/useWindowsSize";
+import Square from  './square'
 
 
 const Pattern = ()=>{
